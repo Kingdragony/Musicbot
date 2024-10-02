@@ -1,24 +1,24 @@
 {
-  "name": "Musicbot",
+  "name": "Andbad-md",
   "version": "2.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "test": "node index.js",
     "s": "node index.js",
-    "musicbot": "pm2 start index.js --attach",
-    "musicbot": "pm2 start index.js --attach",
+    "bmwmd": "pm2 start index.js --attach",
+    "bmwmd": "pm2 start index.js --attach",
     "c": "tsc"
   },
   "keywords": [
     "bot",
     "Baileys",
-    "Musicbot",
+    "Bmw-md",
     "whatsapp",
     "whatsapp-bot",
-    "Musicbot"
+    "bmw-md-boy"
   ],
-  "author": "Arlodragon",
+  "author": "Andbad",
 "license": "ISC",
   "dependencies": {
     "@adiwajshing/keyed-db": "^0.2.4",
