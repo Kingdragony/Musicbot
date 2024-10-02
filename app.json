@@ -3,7 +3,7 @@
   "description":"Deploy now your bot, MUSICBOT developed by ARLODRAGON himself.Make sure you fill all variables to avoid bot from sleeping. ",
   "keywords":["bot","node","baileys","whatsapp"],
   "logo":"https://i.imgur.com/jQh5iIT.jpeg",
-  "repository":"repo",
+  "repository":"https://github.com/Kingdragony/Musicbot",
   "succes_url":"/",
   "stack":"container",
   "env":{
