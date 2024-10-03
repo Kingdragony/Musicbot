@@ -9,11 +9,11 @@ const DATABASE_URL = process.env.DATABASE_URL === undefined
     : process.env.DATABASE_URL;
 module.exports = { session: process.env.SESSION_ID || '',
     PREFIXE: process.env.PREFIX || ".",
-    OWNER_NAME: process.env.OWNER_NAME || "𝕬𝖗𝖑𝖔𝖉𝖗𝖆𝖌𝖔𝖓",
+    OWNER_NAME: process.env.OWNER_NAME || "Arlodragon",
     NUMERO_OWNER : process.env.NUMERO_OWNER || "254702713600",              
     AUTO_READ_STATUS: process.env.AUTO_READ_STATUS || "yes",
     AUTO_DOWNLOAD_STATUS: process.env.AUTO_DOWNLOAD_STATUS || 'no',
-    BOT : process.env.BOT_NAME || '𝖒𝖚𝖘𝖎𝖈𝖇𝖔𝖙',
+    BOT : process.env.BOT_NAME || 'musicbot',
     URL : process.env.BOT_MENU_LINKS || 'https://i.imgur.com/jQh5iIT.jpeg',
     MODE: process.env.PUBLIC_MODE || "yes",
     PM_PERMIT: process.env.PM_PERMIT || 'yes',
