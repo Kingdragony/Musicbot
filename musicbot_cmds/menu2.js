@@ -32,33 +32,33 @@ const temps = moment().format('HH:mm:ss');
 const date = moment().format('DD/MM/YYYY');
 
   let infoMsg =  `
-╭────《《ANDBAD MD》》────
+╭────❦︎𝗠𝗨𝗦𝗜𝗖𝗕𝗢𝗧❦︎ ────
 ┴  ╭─────────────
-│❒⁠⁠⁠⁠│ *ADMIN* : ${s.OWNER_NAME}
-│❒│⁠⁠⁠⁠ *CALENDER* : ${date}
-│❒│⁠⁠⁠⁠ *PREFIX* : ${s.PREFIXE}
-│❒⁠⁠⁠⁠│⁠⁠⁠ *BOT IS IN* : ${mode} mode
-│❒│⁠⁠⁠⁠ *ORDERS* : ${cm.length} 
-│❒│⁠⁠⁠⁠ *SPACE* : ${format(os.totalmem() - os.freemem())}/${format(os.totalmem())}
-│❒│⁠⁠⁠⁠ *CHROME* : ${os.platform()}
-│❒│⁠⁠⁠⁠ *THEME* : *ANDBADTHEME*
+│ꨄ︎│ *𝗢𝗪𝗡𝗘𝗥* : ${s.OWNER_NAME}
+│ꨄ︎│⁠⁠⁠⁠ *CALENDER* : ${date}
+│ꨄ︎│⁠⁠⁠⁠ *𝗣𝗥𝗘𝗙𝗜𝗫* : ${s.PREFIXE}
+│ꨄ︎⁠⁠⁠⁠│⁠⁠⁠ *𝗠𝗢𝗗𝗘* : ${mode} mode
+│ꨄ︎│⁠⁠⁠⁠ *𝗣𝗟𝗨𝗚𝗜𝗡𝗦* : ${cm.length} 
+│ꨄ︎│⁠⁠⁠⁠ *𝗥𝗔𝗠* : ${format(os.totalmem() - os.freemem())}/${format(os.totalmem())}
+│❦︎│⁠⁠⁠⁠ *𝗣𝗟𝗔𝗧𝗙𝗢𝗥𝗠* : ${os.platform()}
+│❦︎│⁠⁠⁠⁠ *𝗧𝗛𝗘𝗠𝗘* : *𝗠𝗨𝗦𝗜𝗖𝗕𝗢𝗧♫︎*
 ┬  ╰──────────────
-╰─── ··《《ANDBAD MD》》··──\n`;
+╰─── ··❦︎𝗠𝗨𝗦𝗜𝗖𝗕𝗢𝗧❦︎··──\n`;
     
 let menuMsg = `
  ─────────
-  *TEAM ANDBAD BOTS* 
+  *♫︎𝗠𝗨𝗦𝗜𝗖𝗕𝗢𝗧♫︎* 
  ─────────
 
 
- *ℂ𝕆𝕄𝕄𝔸ℕ𝔻𝕊*
+ *𝗖𝗢𝗠𝗠𝗔𝗡𝗗𝗦*
 `;
 
     for (const cat in coms) {
-        menuMsg += ` ╭─⬡ *${cat}* ⬡─`;
+        menuMsg += ` ╭─ꨄ︎ *${cat}* ఌ︎─`;
         for (const cmd of coms[cat]) {
             menuMsg += `
-⬡│▸ *${cmd}*`;
+♫︎│▸ *${cmd}*`;
         }
         menuMsg += `
   ╰────────────·· \n`
@@ -66,7 +66,7 @@ let menuMsg = `
 
     menuMsg += `
 
-|⏣MADE EASY BY MR ANDBAD
+|❦︎𝕬𝖗𝖑𝖔𝖉𝖗𝖆𝖌𝖔𝖓 𝖎𝖘 𝖒𝖞 𝖔𝖜𝖓𝖊𝖗
 *❒⁠⁠⁠⁠—————————— ❒⁠⁠⁠⁠——————————❒⁠⁠⁠⁠*
 `;
 
