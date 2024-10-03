@@ -18,7 +18,7 @@
     "whatsapp-bot",
     "musicbot"
   ],
-  "author": "Andbad",
+  "author": "Arlodragon",
 "license": "ISC",
   "dependencies": {
     "@adiwajshing/keyed-db": "^0.2.4",
