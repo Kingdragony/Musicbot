@@ -6,19 +6,19 @@
   "scripts": {
     "test": "node index.js",
     "s": "node index.js",
-    "bmwmd": "pm2 start index.js --attach",
-    "bmwmd": "pm2 start index.js --attach",
+    "musicbot": "pm2 start index.js --attach",
+    "musicbot": "pm2 start index.js --attach",
     "c": "tsc"
   },
   "keywords": [
     "bot",
     "Baileys",
-    "Bmw-md",
+    "musicbot",
     "whatsapp",
     "whatsapp-bot",
     "bmw-md-boy"
   ],
-  "author": "Andbad",
+  "author": "musicbot",
 "license": "ISC",
   "dependencies": {
     "@adiwajshing/keyed-db": "^0.2.4",
