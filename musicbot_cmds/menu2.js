@@ -32,26 +32,26 @@ const temps = moment().format('HH:mm:ss');
 const date = moment().format('DD/MM/YYYY');
 
   let infoMsg =  `
-╭────《《𝕸𝖚𝖘𝖎𝖈𝖇𝖔𝖙♫︎》》────
+╭────《《ANDBAD MD》》────
 ┴  ╭─────────────
-│♫︎│ *𝖚𝖘𝖊𝖗* : ${s.OWNER_NAME}
-│♫︎│⁠⁠⁠⁠ *𝕯𝖆𝖙𝖊* : ${date}
-│♫︎│⁠⁠⁠⁠ *𝕻𝖗𝖊𝖋𝖎𝖝* : ${s.PREFIXE}
-│♫︎⁠⁠⁠⁠│⁠⁠⁠ *𝕸𝖔𝖉𝖊* : ${mode} mode
-│♫︎│⁠⁠⁠⁠ *𝕺𝖗𝖉𝖊𝖗𝖘* : ${cm.length} 
-│♫︎│⁠⁠⁠⁠ *𝕽𝖆𝖒* : ${format(os.totalmem() - os.freemem())}/${format(os.totalmem())}
-│♫︎│⁠⁠⁠⁠ *𝖕𝖑𝖆𝖙𝖋𝖔𝖗𝖒* : ${os.platform()}
-│♫︎│⁠⁠⁠⁠ *𝕿𝖍𝖊𝖒𝖊* :*𝖒𝖚𝖘𝖎𝖈𝖇𝖔𝖙*
+│❒⁠⁠⁠⁠│ *ADMIN* : ${s.OWNER_NAME}
+│❒│⁠⁠⁠⁠ *CALENDER* : ${date}
+│❒│⁠⁠⁠⁠ *PREFIX* : ${s.PREFIXE}
+│❒⁠⁠⁠⁠│⁠⁠⁠ *BOT IS IN* : ${mode} mode
+│❒│⁠⁠⁠⁠ *ORDERS* : ${cm.length} 
+│❒│⁠⁠⁠⁠ *SPACE* : ${format(os.totalmem() - os.freemem())}/${format(os.totalmem())}
+│❒│⁠⁠⁠⁠ *CHROME* : ${os.platform()}
+│❒│⁠⁠⁠⁠ *THEME* : *ANDBADTHEME*
 ┬  ╰──────────────
-╰─── ··《《𝖒𝖚𝖘𝖎𝖈𝖇𝖔𝖙》》··──\n`;
+╰─── ··《《ANDBAD MD》》··──\n`;
     
 let menuMsg = `
  ─────────
-  *𝕸𝖚𝖘𝖎𝖈𝖇𝖔𝖙 ♫︎* 
+  *TEAM ANDBAD BOTS* 
  ─────────
 
 
- *𝖈𝖔𝖒𝖒𝖆𝖓𝖉𝖘*
+ *ℂ𝕆𝕄𝕄𝔸ℕ𝔻𝕊*
 `;
 
     for (const cat in coms) {
@@ -66,8 +66,8 @@ let menuMsg = `
 
     menuMsg += `
 
-|♫︎ 𝕬𝖗𝖑𝖔𝖉𝖗𝖆𝖌𝖔𝖓 ♫︎
-*⁠⁠⁠♫︎——————————⁠⁠⁠♫︎——————————♫︎⁠⁠⁠⁠*
+|⏣MADE EASY BY MR ANDBAD
+*❒⁠⁠⁠⁠—————————— ❒⁠⁠⁠⁠——————————❒⁠⁠⁠⁠*
 `;
 
    var lien = mybotpic();
