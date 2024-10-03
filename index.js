@@ -827,12 +827,12 @@ ${metadata.desc}`;
                 fs.readdirSync(__dirname + "/musicbot_cmds").forEach((fichier) => {
                     if (path.extname(fichier).toLowerCase() == (".js")) {
                         try {
-                            require(__dirname + "/Andbad_cmds/" + fichier);
+                            require(__dirname + "/musicbot_cmds/" + fichier);
                             console.log(fichier + " installed ✔️");
                         }
                         catch (e) {
                             console.log(`${fichier} n'a pas pu être chargé pour les raisons suivantes : ${e}`);
-                        } /* require(__dirname + "/Andbad_cmds/" + fichier);
+                        } /* require(__dirname + "/musicbot_cmds/" + fichier);
                          console.log(fichier + " installed ✔️")*/
                         (0, baileys_1.delay)(300);
                     }
