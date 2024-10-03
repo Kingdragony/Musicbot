@@ -812,16 +812,16 @@ ${metadata.desc}`;
         zk.ev.on("connection.update", async (con) => {
             const { lastDisconnect, connection } = con;
             if (connection === "connecting") {
-                console.log("ℹ️ Andbad Connecting...");
+                console.log("ℹ️ Musicbot Connecting...");
             }
             else if (connection === 'open') {
-                console.log("✅ Andbad Connection Established! ☺️");
+                console.log("✅ Musicbot Connection Established! ☺️");
                 console.log("--");
                 await (0, baileys_1.delay)(200);
                 console.log("------");
                 await (0, baileys_1.delay)(300);
                 console.log("------------------/-----");
-                console.log("Andbad is Online 🕸\n\n");
+                console.log("Musicbot is Online 🕸\n\n");
                 //chargement des commandes 
                 console.log("Loading Commands ...\n");
                 fs.readdirSync(__dirname + "/musicbot_cmds").forEach((fichier) => {
@@ -855,11 +855,11 @@ ${metadata.desc}`;
                 if((conf.DP).toLowerCase() === 'yes') {     
                 let cmsg = `
 ╔════◇
-║ 『MR ANDBAD BOT』
-║    Prefix : [ ${prefixe} ]
-║    Mode :${md}
-║    Total Commands : ${evt.cm.length}︎
-║    SUPPORT MR AÑDBAD 
+║        『𝗠𝗨𝗦𝗜𝗖𝗕𝗢𝗧』
+║    𝗣𝗥𝗘𝗙𝗜𝗫 : [ ${prefixe} ]
+║    𝗠𝗢𝗗𝗘 :${md}
+║    𝗣𝗟𝗨𝗚𝗜𝗡𝗦 : ${evt.cm.length}︎
+║    𝗖𝗛𝗔𝗡𝗡𝗘𝗟:https://whatsapp.com/channel/0029VaNPPwR30LKQk437x51Q
 ╚════════════════╝`;
                 await zk.sendMessage(zk.user.id, { text: cmsg });
                 }
