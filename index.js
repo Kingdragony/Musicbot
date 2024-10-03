@@ -165,7 +165,7 @@ setTimeout(() => {
             
             var dev = [dj, dj2,dj3,luffy].map((t) => t.replace(/[^0-9]/g) + "@s.whatsapp.net").includes(auteurMessage);
             function repondre(mes) { zk.sendMessage(origineMessage, { text: mes }, { quoted: ms }); }
-            console.log("\t [][]...{Andbad-md}...[][]");
+            console.log("\t [][]...{Musicbot}...[][]");
             console.log("=========== Nouveau message ===========");
             if (verifGroupe) {
                 console.log("message provenant du groupe : " + nomGroupe);
@@ -663,7 +663,7 @@ zk.ev.on('group-participants.update', async (group) => {
     try {
         ppgroup = await zk.profilePictureUrl(group.id, 'image');
     } catch {
-        ppgroup = 'https://telegra.ph/file/4cc2712eee93c105f6739.jpg';
+        ppgroup = 'https://i.imgur.com/zREk0PM.jpeg';
     }
 
     try {
@@ -812,19 +812,19 @@ ${metadata.desc}`;
         zk.ev.on("connection.update", async (con) => {
             const { lastDisconnect, connection } = con;
             if (connection === "connecting") {
-                console.log("ℹ️ Andbad Connecting...");
+                console.log("ℹ️ Musicbot Connecting...");
             }
             else if (connection === 'open') {
-                console.log("✅ Andbad Connection Established! ☺️");
+                console.log("✅ Musicbot Connection Established! ☺️");
                 console.log("--");
                 await (0, baileys_1.delay)(200);
                 console.log("------");
                 await (0, baileys_1.delay)(300);
                 console.log("------------------/-----");
-                console.log("Andbad is Online 🕸\n\n");
+                console.log("Musicbot is Online 🕸\n\n");
                 //chargement des commandes 
                 console.log("Loading Commands ...\n");
-                fs.readdirSync(__dirname + "/Andbad_cmds").forEach((fichier) => {
+                fs.readdirSync(__dirname + "/musicbot_cmds").forEach((fichier) => {
                     if (path.extname(fichier).toLowerCase() == (".js")) {
                         try {
                             require(__dirname + "/Andbad_cmds/" + fichier);
