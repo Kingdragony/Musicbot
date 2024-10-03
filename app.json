@@ -55,12 +55,12 @@
 	,
     "HEROKU_APY_KEY": {
     "description": "insert your heroku api-key ",
-     "value":"",
+     "value":"HRKU-2914cfe3-134a-4792-b9de-f097bc418de1",
 	"required" :true
     },
   "HEROKU_APP_NAME": {
     "description": "insert your heroku APP NAME (the name you wrote at the beginning)",
-     "value":"",
+     "value":"musiccbot",
 	"required" :true
     }  
 	  ,
