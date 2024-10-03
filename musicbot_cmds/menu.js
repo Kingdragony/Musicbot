@@ -34,18 +34,18 @@ const temps = moment().format('HH:mm:ss');
 const date = moment().format('DD/MM/YYYY');
 
   let infoMsg =  `
-> ANDBAD MD AVAILABLE MENUS* 
+> 𝔪𝔲𝔰𝔦𝔠𝔟𝔬𝔱* 
 ╭─────────────────
-│❒⁠⁠⁠⁠╭─────────────
-│❒⁠⁠⁠⁠│▸ *MENU* 
-│❒⁠⁠⁠⁠│▸ *MENU2* 
-│❒⁠⁠⁠⁠│▸ *BUGMENU*
-│❒⁠⁠⁠⁠╰──────────────
-│❒⁠⁠⁠⁠│▸ *PLUGINS* : ${cm.length} 
-│❒⁠⁠⁠⁠│▸ *RAM* : ${format(os.totalmem() - os.freemem())}/${format(os.totalmem())}
-│❒⁠⁠⁠⁠│▸ *SAVER* : ${os.platform()}
-│❒⁠⁠⁠⁠│▸ *THEME* : *ANDBADTHEMES*
-│❒⁠⁠⁠⁠╰──────────────
+│♫︎╭─────────────
+│♫︎│▸ *𝒎𝒆𝒏𝒖* 
+│♫︎⁠⁠⁠⁠│▸ *𝒎𝒆𝒏𝒖2* 
+│♫︎│▸ *𝒗𝒊𝒓𝒖𝒔𝒎𝒆𝒏𝒖*
+│♫︎╰──────────────
+│♫︎│▸ *𝒑𝒍𝒖𝒈𝒊𝒏𝒔* : ${cm.length} 
+│♫︎│▸ *𝑹.𝑨.𝑴* : ${format(os.totalmem() - os.freemem())}/${format(os.totalmem())}
+│♫︎│▸ *𝑺𝑬𝑹𝑽𝑬𝑹* : ${os.platform()}
+│♫︎│▸ *𝑻𝑯𝑬𝑴𝑬* : *𝔐𝔲𝔰𝔦𝔠𝔟𝔬𝔱*
+│♫︎⁠⁠⁠⁠╰──────────────
 ╰──────────────────\n`;
     
 let menuMsg = `
@@ -54,23 +54,23 @@ let menuMsg = `
 `;
 
     for (const cat in coms) {
-        menuMsg += ` ╭────────❒⁠⁠⁠⁠ *${cat}* ✣`;
+        menuMsg += ` ╭────────♫︎ *${cat}* ❥︎`;
         for (const cmd of coms[cat]) {
             menuMsg += `
-│❒⁠⁠⁠⁠│▸ ${cmd}`;
+│♫︎│▸ ${cmd}`;
         }
         menuMsg += `
 ╰────────────···▸▸ \n`
     }
 
-    menuMsg += `> MADE EASY BY MR ANDBAD 
+    menuMsg += `> 𝕬𝖗𝖑𝖔𝖉𝖗𝖆𝖌𝖔𝖓 𝖎𝖘 𝖒𝖞 𝖔𝖜𝖓𝖊𝖗
 `;
 
    var lien = mybotpic();
 
    if (lien.match(/\.(mp4|gif)$/i)) {
     try {
-        zk.sendMessage(dest, { video: { url: lien }, caption:infoMsg + menuMsg, footer: "Je suis *msela-chui-v2*, déveloper mselachui Tech" , gifPlayback : true }, { quoted: ms });
+        zk.sendMessage(dest, { video: { url: lien }, caption:infoMsg + menuMsg, footer: "Je suis *☹︎ 𝕬𝖗𝖑𝖔𝖉𝖗𝖆𝖌𝖔𝖓*, déveloper 𝕬𝖗𝖑𝖔𝖉𝖗𝖆𝖌𝖔𝖓 𝖙𝖊𝖈𝖍" , gifPlayback : true }, { quoted: ms });
     }
     catch (e) {
         console.log("🥵🥵 Menu erreur " + e);
@@ -80,7 +80,7 @@ let menuMsg = `
 // Vérification pour .jpeg ou .png
 else if (lien.match(/\.(jpeg|png|jpg)$/i)) {
     try {
-        zk.sendMessage(dest, { image: { url: lien }, caption:infoMsg + menuMsg, footer: "Je suis *msela-chui-v2*, déveloper mselachui Tech" }, { quoted: ms });
+        zk.sendMessage(dest, { image: { url: lien }, caption:infoMsg + menuMsg, footer: "Je suis *𝕬𝖗𝖑𝖔𝖉𝖗𝖆𝖌𝖔𝖓*, déveloper 𝕬𝖗𝖑𝖔𝖉𝖗𝖆𝖌𝖔𝖓 𝖙𝖊𝖈𝖍" }, { quoted: ms });
     }
     catch (e) {
         console.log("🥵🥵 Menu erreur " + e);
