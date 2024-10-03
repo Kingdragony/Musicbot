@@ -2,6 +2,7 @@ build:
   docker:
       worker: Dockerfile
 run:
-   worker:   npm run musicbot
+   worker:   npm run bmwmd
    
+
    
