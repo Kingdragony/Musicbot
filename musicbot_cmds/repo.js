@@ -33,25 +33,22 @@ const temps = moment().format('HH:mm:ss');
 const date = moment().format('DD/MM/YYYY');
 
   let infoMsg =  `
-*AVAILABLE REPO AND GROUPS* 
-╭─────────────────
-│❒⁠⁠⁠⁠╭─────────────
-│❒⁠⁠⁠⁠│▸ *CHANNEL* 
-│❒⁠⁠⁠⁠│▸ *GROUP* 
-│❒⁠⁠⁠⁠│▸ *REPO*
-│❒⁠⁠⁠⁠╰──────────────
-│❒⁠⁠⁠⁠│▸ *CHANNEL* :  https://whatsapp.com/channel/0029VajQn6YF1YlPE0XgBC2m
-│❒⁠⁠⁠⁠│▸ *GROUP* : https://chat.whatsapp.com/DU79JfdnOI83ZFVAyD74Mo
-│❒⁠⁠⁠⁠│▸ *REPO* : https://github.com/Mrandbad/ANDBAD-MD-V1
-│❒⁠⁠⁠⁠│▸ *YTUBE* : https://www.youtube.com/@andbadtz
-│❒⁠⁠⁠⁠╰──────────────
-╰──────────────────\n
+*WA CHANNEL* 
+  ╭─────────────────
+ ❖╭─────────────
+ ❖⁠⁠⁠⁠│▸ 
+ ❖⁠⁠⁠⁠│▸ 
+ ❖│▸ *𝗗𝗜𝗥* : 𝗙𝗢𝗟𝗟𝗢𝗪 𝗧𝗛𝗘 𝗖𝗛𝗔𝗡𝗡𝗘𝗟 𝗙𝗢𝗥 𝗥𝗘𝗣𝗢
+ ❖╰──────────────♞
+ ❖│▸ *CHANNEL* :  https://whatsapp.com/channel/0029VaNPPwR30LKQk437x51Q
+ ❖⁠⁠⁠⁠╰──────────────
+  ╰──────────────────\n
   `;
     
 let menuMsg = `
-     MADE EASY BY MR ANDBAD
+     𝗠𝗨𝗦𝗜𝗖𝗕𝗢𝗧
 
-❒────────────────────❒`;
+❦︎────────────────────ꨄ︎`;
 
    var lien = mybotpic();
 
