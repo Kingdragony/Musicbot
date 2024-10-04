@@ -1,80 +1,46 @@
-const fs = require('fs-extra');
-const { zokou } = require(__dirname + "/../framework/zokou");
-const { format } = require(__dirname + "/../framework/mesfonctions");
-const os = require("os");
-const moment = require("moment-timezone");
-const s = require(__dirname + "/../set");
-const more = String.fromCharCode(8206)
-const readmore = more.repeat(4001)
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+const { zokou } = require("../framework/zokou");
 
-zokou({ nomCom: "repo", categorie: "General" }, async (dest, zk, commandeOptions) => {
-    let { ms, repondre ,prefixe,nomAuteurMessage,mybotpic} = commandeOptions;
-    let { cm } = require(__dirname + "/../framework//zokou");
-    var coms = {};
-    var mode = "public";
-    
-    if ((s.MODE).toLocaleLowerCase() != "yes") {
-        mode = "private";
+zokou({ nomCom: "repo", catégorie:"Général", reaction: "🔎", nomFichier: __filename }, async (dest, zk, commandeOptions) => {
+  const githubRepo = 'https://api.github.com/repos/Kingdragony/Musicbot';
+  const img = 'https://i.imgur.com/zREk0PM.jpeg';
+
+  try {
+    const response = await fetch(githubRepo);
+    const data = await response.json();
+
+    if (data) {
+      const repoInfo = {
+        stars: data.stargazers_count,
+        forks: data.forks_count,
+        lastUpdate: data.updated_at,
+        owner: data.owner.login,
+      };
+
+      const releaseDate = new Date(data.created_at).toLocaleDateString('en-GB');
+      const lastUpdateDate = new Date(data.updated_at).toLocaleDateString('en-GB');
+
+      const gitdata = `*彡𝐌𝐔𝐒𝐈𝐂𝐁𝐎𝐓彡*\n  
+      *𝔄𝔯𝔩𝔬𝔡𝔯𝔞𝔤𝔬𝔫 𝔦𝔰 𝔪𝔶 𝔬𝔴𝔫𝔢.*
+╭─────────▱▰▱▰────────
+││ *𝐒𝐞𝐬𝐬𝐢𝐨𝐧* 
+││ *𝐑𝐞𝐩𝐨:* ${data.html_url}
+││ *𝐒𝐭𝐚𝐫𝐬:* ${repoInfo.stars}
+││ *𝐅𝐨𝐫𝐤𝐬:* ${repoInfo.forks}
+││ *𝐑𝐞𝐥𝐞𝐚𝐬𝐞 𝐃𝐚𝐭𝐞:* ${releaseDate}
+││ *𝐔𝐩𝐝𝐚𝐭𝐞𝐝:* ${repoInfo.lastUpdate}
+││ *𝐎𝐰𝐧𝐞𝐫:* 𝕬𝖗𝖑𝖔𝖉𝖗𝖆𝖌𝖔𝖓
+││ *𝐂𝐡𝐚𝐧𝐧𝐞𝐥:* 
+││ *𝐘𝐨𝐮𝐭𝐮𝐛𝐞:* https://youtube.com/@wemacomic
+╰─────────▱▰▱▰────────
+          *ᴍᴜsɪᴄʙᴏᴛ*`;
+
+      await zk.sendMessage(dest, { image: { url: img }, caption: gitdata });
+    } else {
+      console.log("Could not fetch data");
     }
-
-
-    
-
-    cm.map(async (com, index) => {
-        if (!coms[com.categorie])
-            coms[com.categorie] = [];
-        coms[com.categorie].push(com.nomCom);
-    });
-
-    moment.tz.setDefault('Etc/GMT');
-
-// Créer une date et une heure en GMT
-const temps = moment().format('HH:mm:ss');
-const date = moment().format('DD/MM/YYYY');
-
-  let infoMsg =  `
-*WA CHANNEL* 
-  ╭─────────────────
- ❖╭─────────────
- ❖⁠⁠⁠⁠│▸ 
- ❖⁠⁠⁠⁠│▸ 
- ❖│▸ *𝗗𝗜𝗥* : 𝗙𝗢𝗟𝗟𝗢𝗪 𝗧𝗛𝗘 𝗖𝗛𝗔𝗡𝗡𝗘𝗟 𝗙𝗢𝗥 𝗥𝗘𝗣𝗢
- ❖╰──────────────♞
- ❖│▸ *CHANNEL* :  https://whatsapp.com/channel/0029VaNPPwR30LKQk437x51Q
- ❖⁠⁠⁠⁠╰──────────────
-  ╰──────────────────\n
-  `;
-    
-let menuMsg = `
-     𝗠𝗨𝗦𝗜𝗖𝗕𝗢𝗧
-
-❦︎────────────────────ꨄ︎`;
-
-   var lien = mybotpic();
-
-   if (lien.match(/\.(mp4|gif)$/i)) {
-    try {
-        zk.sendMessage(dest, { video: { url: lien }, caption:infoMsg + menuMsg, footer: "Je suis *Beltahmd*, déveloper Beltah Tech" , gifPlayback : true }, { quoted: ms });
-    }
-    catch (e) {
-        console.log("🥵🥵 Menu erreur " + e);
-        repondre("🥵🥵 Menu erreur " + e);
-    }
-} 
-// Vérification pour .jpeg ou .png
-else if (lien.match(/\.(jpeg|png|jpg)$/i)) {
-    try {
-        zk.sendMessage(dest, { image: { url: lien }, caption:infoMsg + menuMsg, footer: "Je suis *Beltahmd*, déveloper Beltah Tech" }, { quoted: ms });
-    }
-    catch (e) {
-        console.log("🥵🥵 Menu erreur " + e);
-        repondre("🥵🥵 Menu erreur " + e);
-    }
-} 
-else {
-    
-    repondre(infoMsg + menuMsg);
-    
-}
-
-}); 
+  } catch (error) {
+    console.log("Error fetching data:", error);
+  }
+});
