@@ -48,10 +48,7 @@ const date = moment().format('DD/MM/YYYY');
 │♫︎⁠⁠⁠⁠╰──────────────
 ╰──────────────────\n`;
     
-let menuMsg = `
-
- *COMMANDS*${readmore}
-`;
+let menuMsg = ` *COMMANDS* `;
 
     for (const cat in coms) {
         menuMsg += ` ╭────────♫︎ *${cat}* ❥︎`;
