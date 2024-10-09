@@ -6,6 +6,7 @@
 <p align="center"> 
 <img src="https://telegra.ph/file/12e386ac6247868c95ae9.jpg" />
 Musicbot Developed by 𝕬𝖗𝖑𝖔𝖉𝖗𝖆𝖌𝖔𝖓
+  
 [`FORK`](https://github.com/Kingdragony/Musicbot/fork)
 
 [`PAIRING CODE`](https://andbad-qr.onrender.com/pair)
