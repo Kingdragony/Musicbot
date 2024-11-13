@@ -34,27 +34,26 @@ const temps = moment().format('HH:mm:ss');
 const date = moment().format('DD/MM/YYYY');
 
   let infoMsg =  `
-> 𝔪𝔲𝔰𝔦𝔠𝔟𝔬𝔱* 
+> 𝔪𝔲𝔰𝔦𝔠𝔟𝔬𝔱 
 ╭─────────────────
-│♫︎╭─────────────
-│♫︎│▸ *𝐌𝐄𝐍𝐔* 
-│♫︎⁠⁠⁠⁠│▸ *𝐌𝐄𝐍𝐔2* 
-│♫︎│▸ *𝐁𝐔𝐆𝐌𝐄𝐍𝐔*
-│♫︎╰──────────────
-│♫︎│▸ *𝐏𝐋𝐔𝐆𝐈𝐍𝐒* : ${cm.length} 
-│♫︎│▸ *𝐑.𝐀.𝐌* : ${format(os.totalmem() - os.freemem())}/${format(os.totalmem())}
-│♫︎│▸ *𝐒𝐄𝐑𝐕𝐄𝐑* : ${os.platform()}
-│♫︎│▸ *𝐓𝐇𝐄𝐌𝐄* : *𝔐𝔲𝔰𝔦𝔠𝔟𝔬𝔱*
-│♫︎⁠⁠⁠⁠╰──────────────
+│⛓╭─────────────
+│✰│▸ *мєиυ* 
+│✰│▸ *мυиυ2* 
+│✰╰──────────────
+│✰│▸ *ρℓυgιиѕ* : ${cm.length} 
+│✰│▸ *я.α.м* : ${format(os.totalmem() - os.freemem())}/${format(os.totalmem())}
+│✰│▸ *ϐαяℓєγѕ* : ${os.platform()}
+│✰│▸ *τнємє* : *𝔐𝔲𝔰𝔦𝔠𝔟𝔬𝔱*
+│⛓╰──────────────
 ╰──────────────────\n`;
     
 let menuMsg = ` *COMMANDS* `;
 
     for (const cat in coms) {
-        menuMsg += `╭────────♫︎ *${cat}* ❥︎`;
+        menuMsg += `╭────────⛷ *${cat}* ❑`;
         for (const cmd of coms[cat]) {
             menuMsg += `
-│♫︎│▸ ${cmd}`;
+│❐│▸ ${cmd}`;
         }
         menuMsg += `
 ╰────────────···▸▸ \n`
