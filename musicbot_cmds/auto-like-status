@@ -2,7 +2,7 @@ if (mek.key && mek.key.remoteJid === 'status@broadcast' && conf.AUTO_LIKE_STATUS
 
 const adams = await ad.decodeJid(ad.user.id);
 
-const react = ["❤", "💝", "🤍", "🤎", "💗", "💚", "🧡", "💛", "💖", "💓", "💞"];
+const react = ["❤", "💝", "🤍", "🤎", "💗", "💚", "🧡", "💛", "💖", "💓", "💚"];
 
 
 await ad.sendMessage(mek.key.remoteJid, { react: { key: mek.key, text:'}},
