@@ -25,10 +25,10 @@
       "required":false
     }
     ,
-     "PM_PERMIT" :
+     "AUTOLIKE_STATUS" :
      {
-      "description":"Other user can't use your bot in pm (type yes to active or no to deactive ; don't write in capital letter)",
-      "value":"no",
+      "description":"ALLOW BOT TO REACT TO STATUS (type true to activate or false to deactive ; don't write in capital letter)",
+      "value":"true",
       "required":false
     }
     ,
