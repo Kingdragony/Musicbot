@@ -25,7 +25,7 @@
       "required":false
     }
     ,
-     "AUTOLIKE_STATUS" :
+     "AUTO_REACT_STATUS" :
      {
       "description":"ALLOW BOT TO REACT TO STATUS (type true to activate or false to deactive ; don't write in capital letter)",
       "value":"true",
