@@ -34,7 +34,7 @@ const temps = moment().format('HH:mm:ss');
 const date = moment().format('DD/MM/YYYY');
 
   let infoMsg =  `
-> 𝔪𝔲𝔰𝔦𝔠𝔟𝔬𝔱 
+> 🌎 ANTOMSAFI TECH 🌎
 ╭─────────────────
 │⛓╭─────────────
 │✰│▸ *мєиυ* 
@@ -43,11 +43,11 @@ const date = moment().format('DD/MM/YYYY');
 │✰│▸ *ρℓυgιиѕ* : ${cm.length} 
 │✰│▸ *я.α.м* : ${format(os.totalmem() - os.freemem())}/${format(os.totalmem())}
 │✰│▸ *ϐαяℓєγѕ* : ${os.platform()}
-│✰│▸ *τнємє* : *𝔐𝔲𝔰𝔦𝔠𝔟𝔬𝔱*
+│✰│▸ *τнємє* : *🌎 ANTOMSAFI 🌎*
 │⛓╰──────────────
 ╰──────────────────\n`;
     
-let menuMsg = ` *COMMANDS* `;
+let menuMsg = ` *ANTOMSAFI COMMANDS* `;
 
     for (const cat in coms) {
         menuMsg += `╭────────⎘ *${cat}* ⎗`;
@@ -59,7 +59,7 @@ let menuMsg = ` *COMMANDS* `;
 ╰────────────···▸▸ \n`
     }
 
-    menuMsg += `> 𝕬𝖗𝖑𝖔𝖉𝖗𝖆𝖌𝖔𝖓 𝖎𝖘 𝖒𝖞 𝖔𝖜𝖓𝖊𝖗
+    menuMsg += `> ANTOMSAFI TECH IS MY OWNER
 `;
 
    var lien = mybotpic();
