@@ -16,7 +16,7 @@ zokou(
   {
     nomCom: 'ping',
     categorie: 'General',
-    reaction: '⏱️',
+    reaction: '🌎',
     alias: ['p']
   },
 
@@ -38,7 +38,7 @@ zokou(
       }});
     await zk.sendMessage(dest, {
       react: {
-        text: "🎧", key: ms.key
+        text: "⚡", key: ms.key
       }})
   }
 )
