@@ -115,7 +115,7 @@ zokou({
     if (_0x46b582 && _0x46b582.length > 0x0) {
       const _0x42b788 = _0x46b582[0x0];
       const _0x138150 = _0x42b788.url;
-      const _0x549b95 = await fetch("https://api-rin-tohsaka.vercel.app/download/ytmp3?url=" + encodeURIComponent(_0x138150) + "&apiKey=root");
+      const _0x549b95 = await fetch("https://api-rin-tohsaka.vercel.app/search/ytsearch?text=" + encodeURIComponent(_0x138150) + "$apisearch.data.data");
       const _0x44b9bf = await _0x549b95.json();
       if (_0x44b9bf.status === 0xc8 && _0x44b9bf.success) {
         const _0x37c038 = _0x44b9bf.result.download_url;
