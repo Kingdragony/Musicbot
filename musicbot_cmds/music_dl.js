@@ -23,7 +23,7 @@ zokou({
     _0x5a2825 = _0x41e6c5.videos;
     if (_0x5a2825 && _0x5a2825.length > 0x0) {
       const _0x50cb1f = _0x5a2825[0x0].url;
-      const _0x4727f9 = await fetch("https://api.giftedtechnexus.co.ke/api/download/ytmp3?url=" + encodeURIComponent(_0x50cb1f) + "&apikey=" + "gifted_api_kt5gd63gjd8");
+      const _0x4727f9 = await fetch("https://api-rin-tohsaka.vercel.app/download/ytmp3?url=" + encodeURIComponent(_0x50cb1f) + "&apikey=" + "apidownload.data.data.download");
       const _0x58c224 = await _0x4727f9.json();
       if (_0x58c224.status === 0xc8 && _0x58c224.success) {
         const _0x484b86 = _0x58c224.result.download_url;
