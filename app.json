@@ -25,10 +25,10 @@
       "required":false
     }
     ,
-     "AUTO_REACT_STATUS" :
+     "AUTO_LIKE_STATUS" :
      {
-      "description":"ALLOW BOT TO REACT TO STATUS (type true to activate or false to deactive ; don't write in capital letter)",
-      "value":"true",
+      "description":"ALLOW BOT TO REACT TO STATUS (type yes to activate or no to deactive ; don't write in capital letter)",
+      "value":"yes",
       "required":false
     }
     ,
