@@ -30,7 +30,13 @@
       "description":"ALLOW BOT TO REACT TO STATUS (type yes to activate or no to deactive ; don't write in capital letter)",
       "value":"yes",
       "required":false
-    }
+    }, 
+"AUTO_REACTION" :
+ {
+"description" : "Allow Bot to React to messages", 
+	 "value" :"yes", 
+	 "required" : false
+	}
     ,
     "BOT_NAME" : {
        
