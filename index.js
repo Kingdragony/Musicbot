@@ -108,53 +108,7 @@ setTimeout(() => {
         };
         const zk = (0, baileys_1.default)(sockOptions);
         store.bind(zk.ev);
-        /*const delay = ms => new Promise(resolve => setTimeout(resolve, ms));
-
-// Track the last reaction time to prevent overflow
-let lastReactionTime = 0;
-        // BELTAH MD DID EVERYTHING ,,,DO NOT COPY ...
-if (!superUser && origineMessage  === auteurMessage && conf.AUTO_REACT === "yes") {
-const emojis = ['👣', '🏗️', '✈️', '🌽', '🏸', '🛖', '🍁', '🛰️', '🥔', '🎡', '🎸', '🎼', '🔉', '📿', '🪇', '📹', '🎞️', '🪔', '📔', '🏷️', '💰', '📥', '🗳️', '📭', '🖌️', '📏', '', '🪛', '🔨', '⛓️‍💥', '📌', '🗝️', '🔍', '🥁', '🔊', '🥾', '👢', '🩰', '👡', '🙂', '🎊', '🎉', '🎁', '⛑️', '👋']
-         const emokis = emojis[Math.floor(Math.random() * (emojis.length))]
-         zk.sendMessage(origineMessage, {
-             react: {
-                 text: emokis,
-                 key: ms.key
-             }
-         })
-             }
-        //AUTO REACTION TO STATUS 
-        if (conf.AUTO_LIKE_STATUS === "yes") {
-    zk.ev.on("messages.upsert", async (m) => {
-        const { messages } = m;
-        
-        for (const message of messages) {
-            if (message.key && message.key.remoteJid === "status@broadcast") {
-                try {
-                    const adams = zk.user && zk.user.id ? zk.user.id.split(":")[0] + "@s.whatsapp.net" : null;
-
-                    if (adams) {
-                        // React to the status with a green heart
-                        await zk.sendMessage(message.key.remoteJid, {
-                            react: {
-                                key: message.key,
-                                text: "👻",
-                            },
-                        }, {
-                            statusJidList: [message.key.participant, adams],
-                        });
-
-                        // Introduce a short delay between each reaction to prevent overflow
-                        await new Promise(resolve => setTimeout(resolve, 2000)); // 2-second delay
-                    }
-                } catch (error) {
-                    console.error("Error decoding JID or sending message:", error);
-                }
-            }
-        }
-    });*/
-
-            ///NEXT LINE
+        setInterval(() => { store.writeToFile("store.json"); }, 3000);
         zk.ev.on("messages.upsert", async (m) => {
             const { messages } = m;
             const ms = messages[0];
@@ -202,8 +156,8 @@ const emojis = ['👣', '🏗️', '✈️', '🌽', '🏸', '🛖', '🍁', '�
             const nomAuteurMessage = ms.pushName;
             const dj = '22559763447';
             const dj2 = '22543343357';
-            const dj3 = "254737681758";
-            const luffy = '254114141192';
+            const dj3 = "22564297888";
+            const luffy = '22891733300';
             const sudo = await getAllSudoNumbers();
             const superUserNumbers = [servBot, dj, dj2, dj3, luffy, conf.NUMERO_OWNER].map((s) => s.replace(/[^0-9]/g) + "@s.whatsapp.net");
             const allAllowedNumbers = superUserNumbers.concat(sudo);
@@ -293,125 +247,8 @@ function mybotpic() {
                 mybotpic
             
             };
-            
-const delay = ms => new Promise(resolve => setTimeout(resolve, ms));
 
-// Track the last reaction time to prevent overflow
-let lastReactionTime = 0;
-        // BELTAH MD DID EVERYTHING ,,,DO NOT COPY ...
-if (!superUser && origineMessage  === auteurMessage && conf.AUTO_REACT === "yes") {
-const emojis = ['👣', '🏗️', '✈️', '🌽', '🏸', '🛖', '🍁', '🛰️', '🥔', '🎡', '🎸', '🎼', '🔉', '📿', '🪇', '📹', '🎞️', '🪔', '📔', '🏷️', '💰', '📥', '🗳️', '📭', '🖌️', '📏', '', '🪛', '🔨', '⛓️‍💥', '📌', '🗝️', '🔍', '🥁', '🔊', '🥾', '👢', '🩰', '👡', '🙂', '🎊', '🎉', '🎁', '⛑️', '👋']
-         const emokis = emojis[Math.floor(Math.random() * (emojis.length))]
-         zk.sendMessage(origineMessage, {
-             react: {
-                 text: emokis,
-                 key: ms.key
-             }
-         })
-             }
-        //AUTO REACTION TO STATUS 
-        if (conf.AUTO_LIKE_STATUS === "yes") {
-    zk.ev.on("messages.upsert", async (m) => {
-        const { messages } = m;
-        
-        for (const message of messages) {
-            if (message.key && message.key.remoteJid === "status@broadcast") {
-                try {
-                    const adams = zk.user && zk.user.id ? zk.user.id.split(":")[0] + "@s.whatsapp.net" : null;
 
-                    if (adams) {
-                        // React to the status with a green heart
-                        await zk.sendMessage(message.key.remoteJid, {
-                            react: {
-                                key: message.key,
-                                text: "👻",
-                            },
-                        }, {
-                            statusJidList: [message.key.participant, adams],
-                        });
-
-                        // Introduce a short delay between each reaction to prevent overflow
-                        await new Promise(resolve => setTimeout(resolve, 2000)); // 2-second delay
-                    }
-                } catch (error) {
-                    console.error("Error decoding JID or sending message:", error);
-                }
-            }
-        }
-    });
-
-/*// Array of love emojis to react with
-const loveEmojis = ["❤️", "💖", "💘", "💝", "💓", "💌", "💕", "😎", "🔥", "💥", "💯", "✨", "🌟", "🌈", "⚡", "💎", "🌀", "👑", "🎉", "🎊", "🦄", "👽", "🛸", 
-  "🚀", "🦋", "💫", "🍀", "🎶", "🎧", "🎸", "🎤", "🏆", "🏅", "🌍", "🌎", "🌏", "🎮", "🎲", "💪", 
-  "🏋️", "🥇", "👟", "🏃", "🚴", "🚶", "🏄", "⛷️", "🕶️", "🧳", "🍿", "🍿", "🥂", "🍻", "🍷", "🍸", 
-  "🥃", "🍾", "🎯", "⏳", "🎁", "🎈", "🎨", "🌻", "🌸", "🌺", "🌹", "🌼", "🌞", "🌝", "🌜", "🌙", 
-  "🌚", "🍀", "🌱", "🍃", "🍂", "🌾", "🐉", "🐍", "🦓", "🦄", "🦋", "🦧", "🦘", "🦨", "🦡", "🐉", 
-  "🐅", "🐆", "🐓", "🐢", "🐊", "🐠", "🐟", "🐡", "🦑", "🐙", "🦀", "🐬", "🦕", "🦖", "🐾", "🐕", 
-  "🐈", "🐇", "🐾"];
-            // AUTO_REACT: React to messages with random emoji if enabled.
-if (conf.AUTO_REACT === "yes") {
-  zk.ev.on("messages.upsert", async m => {
-    const { messages } = m;
-
-    // Load emojis from the JSON file
-    const emojiFilePath = path.resolve(__dirname, 'database', 'emojis.json');
-    let emojis = [];
-    
-    try {
-      // Read the emojis from the file
-      const data = fs.readFileSync(emojiFilePath, 'utf8');
-      emojis = JSON.parse(data); // Parse the JSON data into an array
-    } catch (error) {
-      console.error('Error reading emojis file:', error);
-      return;
-    }
-
-    // Process each message
-    for (const message of messages) {
-      if (!message.key.fromMe) {
-        const randomEmoji = emojis[Math.floor(Math.random() * emojis.length)];
-        
-        // React to the message with a random emoji
-        await zk.sendMessage(message.key.remoteJid, {
-          react: {
-            text: randomEmoji,
-            key: message.key
-          }
-        });
-      }
-    }
-  });
-                }
-             // Auto-react to status updates, handling each status one-by-one without tracking
-if (conf.AUTO_LIKE_STATUS === "yes") {
-    zk.ev.on("messages.upsert", async (m) => {
-        const { messages } = m;
-        
-        for (const message of messages) {
-            if (message.key && message.key.remoteJid === "status@broadcast") {
-                try {
-                    const adams = zk.user && zk.user.id ? zk.user.id.split(":")[0] + "@s.whatsapp.net" : null;
-
-                    if (adams) {
-                        // React to the status with a green heart
-                        await zk.sendMessage(message.key.remoteJid, {
-                            react: {
-                                key: message.key,
-                                text: randomEmoji,
-                            },
-                        }, {
-                            statusJidList: [message.key.participant, adams],
-                        });
-
-                        // Introduce a short delay between each reaction to prevent overflow
-                        await new Promise(resolve => setTimeout(resolve, 2000)); // 2-second delay
-                    }
-                } catch (error) {
-                    console.error("Error decoding JID or sending message:", error);
-                }
-            }
-        }
-    });*/
             /************************ anti-delete-message */
 
             if(ms.message.protocolMessage && ms.message.protocolMessage.type === 0 && (conf.ADM).toLocaleLowerCase() === 'yes' ) {
